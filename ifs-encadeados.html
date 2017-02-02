@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title>ifs encadeados</title>
+</head>
+<body>
+<script type="text/javascript">
+
+var ehEstagiario = true;
+var ehCLT = true;
+
+if(ehEstagiario || ehCLT){
+	var salarioMensal = 1000;
+
+	if(salarioMensal > 0 && salarioMensal <1000){
+
+		var bonus = salarioMensal * 0.05;
+
+		console.log("Salario >0 e <1000");
+		console.log(bonus);
+
+	} else if(salarioMensal < 2000){
+
+		var bonus = salarioMensal * 0.10;
+
+		console.log("nao caiu na anterior e o salario <2000");
+		console.log(bonus);
+	} else {
+
+		var bonus = salarioMensal * 0.15;
+
+		console.log("nao caiu em nenhuma das outras");
+		console.log(bonus);
+	}
+
+
+}
+
+
+
+</script>
+
+
+
+</body>
+</html>
