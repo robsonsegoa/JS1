@@ -30,11 +30,11 @@
 
 var trPacientes = document.getElementsByClassName('paciente');
 
-var posicaoAtual = 0;
+
 
 //console.log(pacientes[0].altura);
 
-while(posicaoAtual <= trPacientes.length -1){
+for(var posicaoAtual = 0;posicaoAtual <= trPacientes.length -1; posicaoAtual++){
 
 	var pacienteTr = trPacientes[posicaoAtual];
 
@@ -56,7 +56,4 @@ while(posicaoAtual <= trPacientes.length -1){
 	} else{
 	    console.log("Não posso executar uma divisão por 0!");
 	}
-
-posicaoAtual++;
-
 }
